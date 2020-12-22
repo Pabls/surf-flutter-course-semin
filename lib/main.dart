@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyFirstStatefulWidget(),
     );
   }
 }
@@ -112,6 +112,47 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+}
+
+class MyFirstWidget extends StatelessWidget {
+  int _counter = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    // hot reload вызывает пересоздание виджета, значение переменной никуда не сохраняется,
+    // она инициалиируется заново и всегда будет = 1
+    _counter++;
+    print("the method from MyFirstWidget was called $_counter times");
+    return Container(
+      child: Center(
+        child: Text("Hello"),
+      ),
+    );
+  }
+}
+
+class MyFirstStatefulWidget extends StatefulWidget {
+  @override
+  _MyFirstStatefulWidgetState createState() => _MyFirstStatefulWidgetState();
+}
+
+class _MyFirstStatefulWidgetState extends State<MyFirstStatefulWidget> {
+  int _counter = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    //  После hot reload значение переменной увеличивается на 1, так как
+    //  у StatefulWidget есть State, предназначенный как раз таки для сохранения состояния при пересоздании виджета
+    _counter++;
+    print(
+        "the method from _MyFirstStatefulWidgetState was called $_counter times");
+
+    return Container(
+      child: Center(
+        child: Text("Hello"),
+      ),
     );
   }
 }
