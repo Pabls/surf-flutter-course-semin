@@ -1,8 +1,67 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(App());
 }
+
+// This widget is the root of your application.
+class App extends StatefulWidget {
+  @override
+  _AppState createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Places app",
+      home: MyFirstWidget(),
+    );
+  }
+}
+
+class MyFirstWidget extends StatelessWidget {
+  int _counter = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    _counter++;
+    print("the method from MyFirstWidget was called $_counter times");
+    return Container(
+      child: Center(
+        child: Text("Hello"),
+      ),
+    );
+  }
+
+// Type getContextType() => context.runtimeType;
+}
+
+class MyFirstStatefulWidget extends StatefulWidget {
+  @override
+  _MyFirstStatefulWidgetState createState() => _MyFirstStatefulWidgetState();
+
+// Type getContextType() => context.runtimeType;
+}
+
+class _MyFirstStatefulWidgetState extends State<MyFirstStatefulWidget> {
+  int _counter = 0;
+
+  @override
+  Widget build(BuildContext context) {
+    _counter++;
+    print(
+        "the method from _MyFirstStatefulWidgetState was called $_counter times");
+
+    return Container(
+      child: Center(
+        child: Text("Hello"),
+      ),
+    );
+  }
+}
+
+//------------------------------------------------------------------------------
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -112,47 +171,6 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
-  }
-}
-
-class MyFirstWidget extends StatelessWidget {
-  int _counter = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    // hot reload вызывает пересоздание виджета, значение переменной никуда не сохраняется,
-    // она инициалиируется заново и всегда будет = 1
-    _counter++;
-    print("the method from MyFirstWidget was called $_counter times");
-    return Container(
-      child: Center(
-        child: Text("Hello"),
-      ),
-    );
-  }
-}
-
-class MyFirstStatefulWidget extends StatefulWidget {
-  @override
-  _MyFirstStatefulWidgetState createState() => _MyFirstStatefulWidgetState();
-}
-
-class _MyFirstStatefulWidgetState extends State<MyFirstStatefulWidget> {
-  int _counter = 0;
-
-  @override
-  Widget build(BuildContext context) {
-    //  После hot reload значение переменной увеличивается на 1, так как
-    //  у StatefulWidget есть State, предназначенный как раз таки для сохранения состояния при пересоздании виджета
-    _counter++;
-    print(
-        "the method from _MyFirstStatefulWidgetState was called $_counter times");
-
-    return Container(
-      child: Center(
-        child: Text("Hello"),
-      ),
     );
   }
 }
