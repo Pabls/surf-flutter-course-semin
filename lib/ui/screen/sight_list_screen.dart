@@ -22,16 +22,31 @@ class _SightListScreenState extends State<SightListScreen> {
         title: Container(
           height: SIGHT_LIST_SCREEN_TOOLBAR_HEIGHT,
           alignment: Alignment.bottomLeft,
-          child: Text(
-            SIGHT_LIST_SCREEN_TITLE,
-            overflow: TextOverflow.ellipsis,
+          child: RichText(
             maxLines: TEXT_MAX_LINES_2,
-            textAlign: TextAlign.start,
-            style: TextStyle(
-              color: Color(OXFORD_BLUE),
-              fontSize: FONT_SIZE_32,
-              fontWeight: FontWeight.bold,
-            ),
+            text: TextSpan(
+                style: TextStyle(
+                  fontSize: FONT_SIZE_32,
+                  fontWeight: FontWeight.bold,
+                ),
+                children: [
+                  TextSpan(
+                      text: SIGHT_LIST_SCREEN_TITLE_FIRST_CHAR,
+                      style: TextStyle(color: Color(FERN)),
+                      children: [
+                        TextSpan(
+                            text: SIGHT_LIST_SCREEN_TITLE_FIRST_WORD,
+                            style: TextStyle(color: Color(OXFORD_BLUE)))
+                      ]),
+                  TextSpan(
+                      text: SIGHT_LIST_SCREEN_TITLE_SECOND_CHAR,
+                      style: TextStyle(color: Color(CREAM_CAN)),
+                      children: [
+                        TextSpan(
+                            text: SIGHT_LIST_SCREEN_TITLE_SECOND_WORD,
+                            style: TextStyle(color: Color(OXFORD_BLUE)))
+                      ])
+                ]),
           ),
         ),
       ),
