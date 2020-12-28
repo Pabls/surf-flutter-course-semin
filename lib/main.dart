@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:places/res/strings.dart';
 import 'package:places/ui/screen/sight_list_screen.dart';
 
 void main() {
@@ -14,7 +15,8 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Places app",
+      title: appName,
+      theme: ThemeData(fontFamily: "Roboto"),
       home: SightListScreen(),
     );
   }
