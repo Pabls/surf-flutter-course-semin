@@ -15,8 +15,8 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: APP_NAME,
-      theme: ThemeData(fontFamily: ROBOTO_FONT_STYLE_NAME),
+      title: appName,
+      theme: ThemeData(fontFamily: "Roboto"),
       home: SightListScreen(),
     );
   }

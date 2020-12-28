@@ -3,7 +3,7 @@ import 'package:places/res/colors.dart';
 import 'package:places/res/dimens.dart';
 import 'package:places/res/strings.dart';
 
-// Main screen of the application
+/// Main screen of the application
 class SightListScreen extends StatefulWidget {
   @override
   _SightListScreenState createState() => _SightListScreenState();
@@ -15,21 +15,21 @@ class _SightListScreenState extends State<SightListScreen> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        toolbarHeight: SIGHT_LIST_SCREEN_TOOLBAR_HEIGHT,
-        elevation: ELEVATION_0,
+        toolbarHeight: sightListScreenToolbarHeight,
+        elevation: elevation0,
         backgroundColor: Colors.transparent,
         brightness: Brightness.light,
         title: Container(
-          height: SIGHT_LIST_SCREEN_TOOLBAR_HEIGHT,
+          height: sightListScreenToolbarHeight,
           alignment: Alignment.bottomLeft,
           child: Text(
-            SIGHT_LIST_SCREEN_TITLE,
+            sightListScreenTitle,
             overflow: TextOverflow.ellipsis,
-            maxLines: TEXT_MAX_LINES_2,
+            maxLines: textMaxLines2,
             textAlign: TextAlign.start,
             style: TextStyle(
-              color: Color(OXFORD_BLUE),
-              fontSize: FONT_SIZE_32,
+              color: Color(oxfordBlue),
+              fontSize: fontSize32,
               fontWeight: FontWeight.bold,
             ),
           ),
