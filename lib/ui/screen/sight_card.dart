@@ -31,14 +31,16 @@ class SightCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      _sight.type.toLowerCase(),
-                      overflow: TextOverflow.ellipsis,
-                      maxLines: Dimens.textMaxLines1,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: Dimens.fontSize14,
-                          fontWeight: FontWeight.bold),
+                    Expanded(
+                      child: Text(
+                        _sight.type,
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: Dimens.textMaxLines1,
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: Dimens.fontSize14,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                     Container(
                       width: Dimens.sightCardIconSize,
