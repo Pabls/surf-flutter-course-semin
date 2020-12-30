@@ -3,6 +3,7 @@ class Dimens {
   // font
   static const double fontSize14 = 14;
   static const double fontSize16 = 16;
+  static const double fontSize24 = 24;
   static const double fontSize32 = 32;
 
   // text max lines
@@ -18,6 +19,7 @@ class Dimens {
   // margin
   static const double margin2 = 2;
   static const double margin16 = 16;
+  static const double margin24 = 24;
 
   // elements
   static const double sightListScreenToolbarHeight = 112;
@@ -27,4 +29,6 @@ class Dimens {
   static const double sightCardInfoSectionHeight = 92;
   static const double sightCardCornerRadius = 12;
   static const double sightCardIconSize = 24;
+
+  static const double sightDetailsImageGalleryHeight = 360;
 }
