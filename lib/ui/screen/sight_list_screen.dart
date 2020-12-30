@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:places/res/colors.dart';
 import 'package:places/res/dimens.dart';
 import 'package:places/res/strings.dart';
 import 'package:places/res/styles.dart';
