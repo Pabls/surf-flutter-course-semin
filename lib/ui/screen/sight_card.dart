@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:places/domain/sight.dart';
 import 'package:places/res/colors.dart';
 import 'package:places/res/dimens.dart';
+import 'package:places/res/styles.dart';
 
 class SightCard extends StatelessWidget {
   final Sight _sight;
@@ -36,10 +37,7 @@ class SightCard extends StatelessWidget {
                         _sight.type,
                         overflow: TextOverflow.ellipsis,
                         maxLines: Dimens.textMaxLines1,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: Dimens.fontSize14,
-                            fontWeight: FontWeight.bold),
+                        style: Styles.smallBold,
                       ),
                     ),
                     Container(
@@ -72,20 +70,14 @@ class SightCard extends StatelessWidget {
                       _sight.name,
                       overflow: TextOverflow.ellipsis,
                       maxLines: Dimens.textMaxLines2,
-                      style: TextStyle(
-                          color: Color(AppColors.oxfordBlue),
-                          fontSize: Dimens.fontSize16,
-                          fontWeight: FontWeight.w500),
+                      style: Styles.text,
                     ),
                   ),
                   Text(
                     _sight.details,
                     overflow: TextOverflow.ellipsis,
                     maxLines: Dimens.textMaxLines1,
-                    style: TextStyle(
-                        color: Color(AppColors.waterloo),
-                        fontSize: Dimens.fontSize14,
-                        fontWeight: FontWeight.normal),
+                    style: Styles.small,
                   )
                 ],
               ),

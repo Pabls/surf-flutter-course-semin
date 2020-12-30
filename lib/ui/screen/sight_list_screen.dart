@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:places/res/colors.dart';
 import 'package:places/res/dimens.dart';
 import 'package:places/res/strings.dart';
+import 'package:places/res/styles.dart';
 import 'package:places/ui/screen/sight_card.dart';
 
 import '../../mocks.dart';
@@ -30,11 +31,7 @@ class _SightListScreenState extends State<SightListScreen> {
             overflow: TextOverflow.ellipsis,
             maxLines: Dimens.textMaxLines2,
             textAlign: TextAlign.start,
-            style: TextStyle(
-              color: Color(AppColors.oxfordBlue),
-              fontSize: Dimens.fontSize32,
-              fontWeight: FontWeight.bold,
-            ),
+            style: Styles.largeTitle,
           ),
         ),
       ),
