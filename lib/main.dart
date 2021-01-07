@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:places/res/strings.dart';
-import 'package:places/ui/screen/sight_details.dart';
 import 'package:places/ui/screen/sight_list_screen.dart';
-
-import 'mocks.dart';
 
 void main() {
   runApp(App());
@@ -20,7 +17,7 @@ class _AppState extends State<App> {
     return MaterialApp(
       title: Strings.appName,
       theme: ThemeData(fontFamily: "Roboto"),
-      home: SightListScreen()
+      home: SightListScreen(),
     );
   }
 }
