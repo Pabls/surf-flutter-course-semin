@@ -47,7 +47,7 @@ class _BackButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: Dimens.margin16, top: Dimens.margin32),
+      margin: EdgeInsets.only(left: Dimens.margin16, top: Dimens.margin36),
       width: Dimens.sightDetailsBackButtonSize,
       height: Dimens.sightDetailsBackButtonSize,
       child: FlatButton(
