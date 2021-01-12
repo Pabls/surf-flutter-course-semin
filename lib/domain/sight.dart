@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// temp DTO for SightListScreen
 class Sight {
   const Sight(
       {@required this.name,

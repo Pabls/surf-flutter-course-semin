@@ -5,6 +5,7 @@ import 'package:places/res/colors.dart';
 import 'package:places/res/dimens.dart';
 import 'package:places/res/styles.dart';
 
+/// View-element for a card on the main screen
 class SightCard extends StatelessWidget {
   final Sight _sight;
 
