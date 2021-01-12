@@ -1,5 +1,5 @@
-// file for storing string constants
-
-const String appName = "Интересные места";
-
-const String sightListScreenTitle = "Список\nинтересных мест";
+/// application string
+class Strings {
+  static const String appName = "Интересные места";
+  static const String sightListScreenTitle = "Список\nинтересных мест";
+}
