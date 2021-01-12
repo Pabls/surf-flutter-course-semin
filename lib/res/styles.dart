@@ -30,14 +30,32 @@ class Styles {
     fontWeight: FontWeight.w500,
   );
 
-  static const smallBold = TextStyle(
+  static const smallBoldLight = TextStyle(
     color: Colors.white,
     fontSize: Dimens.fontSize14,
     fontWeight: FontWeight.bold,
   );
 
-  static const small = TextStyle(
+  static const smallBoldDark = TextStyle(
+    color: Color(AppColors.oxfordBlue),
+    fontSize: Dimens.fontSize14,
+    fontWeight: FontWeight.bold,
+  );
+
+  static const smallUltraLight = TextStyle(
+    color: Color(AppColors.waterlooLight),
+    fontSize: Dimens.fontSize14,
+    fontWeight: FontWeight.w400,
+  );
+
+  static const smallLight = TextStyle(
     color: Color(AppColors.waterloo),
+    fontSize: Dimens.fontSize14,
+    fontWeight: FontWeight.w400,
+  );
+
+  static const smallDark = TextStyle(
+    color: Color(AppColors.oxfordBlue),
     fontSize: Dimens.fontSize14,
     fontWeight: FontWeight.w400,
   );

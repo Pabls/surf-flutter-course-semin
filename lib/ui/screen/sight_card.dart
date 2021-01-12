@@ -38,7 +38,7 @@ class SightCard extends StatelessWidget {
                         _sight.type,
                         overflow: TextOverflow.ellipsis,
                         maxLines: Dimens.textMaxLines1,
-                        style: Styles.smallBold,
+                        style: Styles.smallBoldLight,
                       ),
                     ),
                     Container(
@@ -78,7 +78,7 @@ class SightCard extends StatelessWidget {
                     _sight.details,
                     overflow: TextOverflow.ellipsis,
                     maxLines: Dimens.textMaxLines1,
-                    style: Styles.small,
+                    style: Styles.smallLight,
                   )
                 ],
               ),

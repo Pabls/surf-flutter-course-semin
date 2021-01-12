@@ -16,11 +16,18 @@ class Dimens {
   static const double elevation0 = 0;
 
   // padding
+  static const double padding0 = 0;
+  static const double padding4 = 4;
   static const double padding16 = 16;
+  static const double padding24 = 24;
 
   // margin
   static const double margin2 = 2;
+  static const double margin8 = 8;
   static const double margin16 = 16;
+  static const double margin24 = 24;
+  static const double margin32 = 32;
+  static const double margin36 = 36;
 
   // elements
   static const double sightListScreenToolbarHeight = 112;
@@ -30,4 +37,11 @@ class Dimens {
   static const double sightCardInfoSectionHeight = 92;
   static const double sightCardCornerRadius = 12;
   static const double sightCardIconSize = 24;
+
+  static const double sightDetailsImageGalleryHeight = 360;
+  static const double sightDetailsBackButtonSize = 36;
+  static const double sightDetailsBackButtonCornerRadius = 12;
+  static const double sightDetailsRouteButtonHeight = 48;
+  static const double sightDetailsRouteButtonCornerRadius = 12;
+  static const double sightDetailsActionButtonHeight = 40;
 }
